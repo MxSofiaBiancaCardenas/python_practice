@@ -10,4 +10,9 @@ leader = random.choice(members)
 
 class Dice:
     def roll(self):
-        pass
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return first, second
+    
+dice = Dice()
+print(dice.roll())
